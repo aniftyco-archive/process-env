@@ -1,8 +1,8 @@
 {
   "name": "process-env",
-  "description": "Modern loader for environment variables with no dependencies",
-  "version": "0.0.0",
-  "repository": "aniftyco/process.env",
+  "description": "dotenv file loading",
+  "version": "1.1.0",
+  "repository": "aniftyco/process-env",
   "author": {
     "name": "Nifty Development, LLC",
     "email": "support@aniftyco.com",
@@ -15,6 +15,7 @@
     }
   ],
   "scripts": {
+    "prebuild": "rimraf lib",
     "build": "tsc",
     "test": "jest"
   },
@@ -25,6 +26,7 @@
     "extends": "nifty"
   },
   "prettier": {
+    "printWidth": 120,
     "singleQuote": true
   },
   "jest": {
@@ -38,18 +40,24 @@
     },
     "globals": {
       "ts-jest": {
-        "tsConfig": "./tests/tsconfig.json"
+        "tsconfig": "./tests/tsconfig.json"
       }
     }
   },
-  "devDependencies": {
-    "@types/node": "^12.12.54",
-    "eslint": "^7.6.0",
-    "eslint-config-nifty": "^3.0.0-rc.8",
-    "jest": "^26.4.0",
-    "prettier": "^2.0.5",
-    "ts-jest": "^26.2.0",
-    "typescript": "^3.9.7"
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.14.10",
+    "eslint": "^7.14.0",
+    "eslint-config-nifty": "^3.2.2",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
+  }
 }

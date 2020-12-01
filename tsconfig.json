@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["esnext", "esnext.asynciterable"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -9,5 +9,6 @@
     "outDir": "./lib",
     "types": ["node"]
   },
-  "include": ["src/**/*"]
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
 }

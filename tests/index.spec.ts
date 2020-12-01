@@ -1,15 +1,9 @@
-import { hello } from './../src';
+import * as proccessEnv from './../src';
 
-describe('index', () => {
-  it('should greet the world', () => {
-    const actual = hello();
+describe('processEnv', () => {
+  it('should export processEnv & loadEnvConfig methods', () => {
+    const exports = Object.keys(proccessEnv);
 
-    expect(actual).toBe('Hello, World!');
-  });
-
-  it('should greet by name', () => {
-    const actual = hello('Moto');
-
-    expect(actual).toBe('Hello, Moto!');
+    expect(exports).toEqual(['processEnv', 'loadEnvConfig']);
   });
 });

@@ -1,19 +1,19 @@
-This is a npm package template bootstrapped with [`Groundwork`](https://github.com/aniftyco/groundwork).
-
-You can use this template by running `npx groundwork aniftyco/npm-package my-package`.
-
-<!-- Feel free to delete the message above -->
-
 # process-env
 
-> Modern loader for environment variables with no dependencies
+> dotenv file loading
+
+Clone of `@next/env` for loading dotenv files with proper priorities, for usage outside of Next.js
 
 ## Intallation
 
 ```sh
-yarn add process-env
+npm install --save add process-env
 ```
 
 ## Usage
 
-Usage instructions here.
+```ts
+import { loadEnvConfig } from 'process-env';
+
+loadEnvConfig(__dirname);
+```
