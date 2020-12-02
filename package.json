@@ -20,7 +20,8 @@
     "test": "jest"
   },
   "files": [
-    "lib"
+    "lib",
+    "load.js"
   ],
   "eslintConfig": {
     "extends": "nifty"
