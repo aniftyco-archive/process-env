@@ -15,10 +15,12 @@
     }
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "prebuild": "rimraf lib",
     "build": "tsc",
     "test": "jest"
   },
+  "main": "./lib/index.js",
   "files": [
     "lib",
     "load.js"
