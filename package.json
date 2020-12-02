@@ -1,7 +1,7 @@
 {
   "name": "process-env",
   "description": "dotenv file loading",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "repository": "aniftyco/process-env",
   "author": {
     "name": "Nifty Development, LLC",
